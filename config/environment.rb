@@ -1,4 +1,8 @@
 require 'bundler'
+require 'csv'
+require 'sqlite3'
 Bundler.require
 
-# Setup a DB connection here
+# db = SQLite3::Database.new ":memory"
+# open connection to extant database
+db = SQLite3::Database.new "labs_database.db"
